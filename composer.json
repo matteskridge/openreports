@@ -1,0 +1,23 @@
+{
+	"name": "cosmic/openreports",
+	"type": "phpbb-extension",
+	"description": "Displays an indicator with the number of open reports.",
+	"homepage": "http://phpbb.me/forums/viewtopic.php?f=4&p=2#p2",
+	"version": "0.0.1",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Cosmic"
+		}
+	],
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": "~1.0"
+	},
+	"extra": {
+		"display-name": "Open Reports",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0"
+		}
+	}
+}

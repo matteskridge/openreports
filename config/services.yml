@@ -1,0 +1,14 @@
+services:
+    cosmic.openreports.main_listener:
+        class: cosmic\openreports\event\main_listener
+        arguments:
+            - @config
+            - @dbal.conn
+            - @request
+            - @template
+            - @user
+            - @auth
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
