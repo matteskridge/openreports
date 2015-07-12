@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Displays an indicator with the number of open reports.",
 	"homepage": "http://phpbb.me/forums/viewtopic.php?f=4&p=2#p2",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "GPL-2.0",
 	"authors": [
 		{

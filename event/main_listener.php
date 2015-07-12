@@ -111,7 +111,7 @@ class main_listener implements EventSubscriberInterface
         if ($num > 0) {
             $this->template->assign_vars(array(
                 "U_REPORTS_LINK" => append_sid("mcp.".$this->php_ext."?i=reports"),
-                "U_REPORTS_TOTAL" => $this->user->lang("OPEN_REPORTS", $num)
+                "U_REPORTS_TOTAL" => $this->user->lang("OPEN_REPORTS", (int) $num)
             ));
         }
 
@@ -125,7 +125,7 @@ class main_listener implements EventSubscriberInterface
         if ($num > 0) {
             $this->template->assign_vars(array(
                 "U_PM_REPORTS_LINK" => append_sid("mcp.".$this->php_ext."?i=mcp_pm_reports&mode=pm_reports"),
-                "U_PM_REPORTS_TOTAL" => $this->user->lang("OPEN_PM_REPORTS", $num)
+                "U_PM_REPORTS_TOTAL" => $this->user->lang("OPEN_PM_REPORTS", (int) $num)
             ));
         }
 

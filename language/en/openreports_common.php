@@ -19,6 +19,12 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-    "OPEN_REPORTS" => "%s Open Report(s)",
-    "OPEN_PM_REPORTS" => "%s Open PM Report(s)",
+    'OPEN_REPORTS'     => array(
+        1   => '%1$d Open Report',
+        2   => '%1$d Open Reports',
+    ),
+    'OPEN_PM_REPORTS'       => array(
+        1   => '%1$d Open PM Report',
+        2   => '%1$d Open PM Reports',
+    ),
 ));
